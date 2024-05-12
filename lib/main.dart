@@ -251,6 +251,7 @@ void main() => runApp(MaterialApp(
             ),
 
             new Row(
+
               children: [
                 Container(
               child: Flexible(
@@ -284,7 +285,49 @@ void main() => runApp(MaterialApp(
                 ),
               ],
             ),
+new Row(
 
+  children: [
+
+      new InkWell(
+        onTap: () {},
+        child: new Padding(
+          padding: new EdgeInsets.all(10.0),
+          child: FittedBox(
+              fit: BoxFit.fitWidth,
+              child: Text(
+                'Track',
+                style: TextStyle(fontSize: 20.0),
+              )),
+        ),
+      ),
+      new InkWell(
+        onTap: () {},
+        child: new Padding(
+          padding: new EdgeInsets.all(10.0),
+          child: FittedBox(
+              fit: BoxFit.fitWidth,
+              child: Text(
+                'Playlist',
+                style: TextStyle(fontSize: 20.0),
+              )),
+        ),
+      ),
+      new InkWell(
+        onTap: () {},
+        child: new Padding(
+          padding: new EdgeInsets.all(10.0),
+          child: FittedBox(
+              fit: BoxFit.fitWidth,
+              child: Text(
+                'Favourite',
+                style: TextStyle(fontSize: 20.0),
+              )),
+        ),
+      ),
+
+  ],
+),
           ],
         ),
       ),
